@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link :to="route.path" v-for="route in routes" v-bind:key="route">{{route.name}}</router-link>
+      <router-link
+        :to="route.path"
+        v-for="(route,index) in routes"
+        v-bind:key="index"
+      >{{route.name}}</router-link>
     </div>
     <div class="router-view">
       <router-view></router-view>

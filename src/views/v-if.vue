@@ -1,5 +1,7 @@
 <template>
-  <div v-if="show">点击我可以切换显示隐藏</div>
+  <div class="out" v-on:click="change">
+    <div class="inner" v-if="show">点击我可以切换显示隐藏</div>
+  </div>
 </template>
 
 <script>
@@ -18,4 +20,12 @@ export default {
 </script>
 
 <style scoped>
+.out {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 </style>
