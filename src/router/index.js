@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import Vif from '../views/v-if.vue'
 import Vfor from '../views/v-for.vue'
+import vmodel from '../views/v-model.vue'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ export const routes = [
     path: '/v-for',
     name: 'v-for',
     component: Vfor
+  },
+  {
+    path: '/v-model',
+    name: 'v-model',
+    component: vmodel
   },
 ]
 
