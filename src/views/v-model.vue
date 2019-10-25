@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      text: "这是默认值，你可以随便更改"
+      text: "这是默认值，可以随便更改"
     };
   }
 };
