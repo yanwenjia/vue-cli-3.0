@@ -3,7 +3,8 @@ import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
 import Vif from '../views/v-if.vue'
 import Vfor from '../views/v-for.vue'
-import vmodel from '../views/v-model.vue'
+import Vmodel from '../views/v-model.vue'
+import LifeCycle from '../views/life-cycle.vue'
 
 Vue.use(VueRouter)
 
@@ -21,7 +22,12 @@ export const routes = [
   {
     path: '/v-model',
     name: 'v-model',
-    component: vmodel
+    component: Vmodel
+  },
+  {
+    path: '/life-cycle',
+    name: 'life-cycle',
+    component: LifeCycle
   },
 ]
 
