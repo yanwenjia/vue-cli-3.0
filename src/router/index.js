@@ -5,6 +5,7 @@ import Vif from '../views/v-if.vue'
 import Vfor from '../views/v-for.vue'
 import Vmodel from '../views/v-model.vue'
 import LifeCycle from '../views/life-cycle.vue'
+import Computed from '../views/computed.vue'
 
 Vue.use(VueRouter)
 
@@ -26,8 +27,13 @@ export const routes = [
   },
   {
     path: '/life-cycle',
-    name: 'life-cycle',
+    name: '生命周期',
     component: LifeCycle
+  },
+  {
+    path: '/computed',
+    name: '计算属性',
+    component: Computed
   },
 ]
 
