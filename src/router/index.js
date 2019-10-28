@@ -6,6 +6,7 @@ import Vfor from '../views/v-for.vue'
 import Vmodel from '../views/v-model.vue'
 import LifeCycle from '../views/life-cycle.vue'
 import Computed from '../views/computed.vue'
+import Father from '../views/father.vue'
 
 Vue.use(VueRouter)
 
@@ -34,6 +35,11 @@ export const routes = [
     path: '/computed',
     name: '计算属性',
     component: Computed
+  },
+  {
+    path: '/componentuse',
+    name: '组件调用',
+    component: Father
   },
 ]
 
