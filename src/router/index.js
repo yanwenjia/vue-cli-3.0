@@ -7,6 +7,9 @@ import Vmodel from '../views/v-model.vue'
 import LifeCycle from '../views/life-cycle.vue'
 import Computed from '../views/computed.vue'
 import Father from '../views/father.vue'
+import Watch from '../views/watch.vue'
+import Vuex from '../views/vuex.vue'
+import Sync from '../views/sync.vue'
 
 Vue.use(VueRouter)
 
@@ -37,10 +40,25 @@ export const routes = [
     component: Computed
   },
   {
+    path: '/watch',
+    name: '监听',
+    component: Watch
+  },
+  {
     path: '/componentuse',
     name: '组件调用',
     component: Father
   },
+  {
+    path: '/vuex',
+    name: 'vuex',
+    component: Vuex
+  },
+  {
+    path: '/sync',
+    name: 'sync',
+    component: Sync
+  }
 ]
 
 const router = new VueRouter({
@@ -48,5 +66,12 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+// 路由守卫
+// router.beforeEach((to, from, next) => {
+//   console.log("to::::", to)
+//   console.log("from", from)
+//   console.log("next", next)
+//   next();
+// })
 
 export default router
