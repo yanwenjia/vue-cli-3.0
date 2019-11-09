@@ -10,6 +10,7 @@ import Father from '../views/father.vue'
 import Watch from '../views/watch.vue'
 import Vuex from '../views/vuex.vue'
 import Sync from '../views/sync.vue'
+import Slot from '../views/slot.vue'
 
 Vue.use(VueRouter)
 
@@ -58,6 +59,11 @@ export const routes = [
     path: '/sync',
     name: 'sync',
     component: Sync
+  },
+  {
+    path: '/slot',
+    name: 'slot',
+    component: Slot
   }
 ]
 
