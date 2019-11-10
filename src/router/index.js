@@ -11,6 +11,7 @@ import Watch from '../views/watch.vue'
 import Vuex from '../views/vuex.vue'
 import Sync from '../views/sync.vue'
 import Slot from '../views/slot.vue'
+import Directive from '../views/directive.vue'
 
 Vue.use(VueRouter)
 
@@ -64,6 +65,11 @@ export const routes = [
     path: '/slot',
     name: 'slot',
     component: Slot
+  },
+  {
+    path: '/directive',
+    name: 'directive',
+    component: Directive
   }
 ]
 
